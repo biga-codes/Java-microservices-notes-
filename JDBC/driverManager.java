@@ -16,7 +16,7 @@ public Connection getConnection() throws SQLException {
                    "jdbc:" + this.dbms + ":" +
                    this.dbName +
                    ";create=true",
-                   connectionProps);
+                   connectionProps); //appending the url for dbms connection
     }
     System.out.println("Connected to database");
     return conn;//returns the connection status
