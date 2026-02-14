@@ -25,4 +25,6 @@ public Connection getConnection() throws SQLException {
 //        .getConnection("jdbc:mysql://localhost/test?serverTimezone=UTC",
 //                "myUsername", "myPassword"))
 /* MySQL: jdbc:mysql://localhost:3306/dbname, where localhost is the name of the server hosting your database, and 3306 is the port number.
-   Java DB: jdbc:derby:testdb;create=true, where testdb is the name of the database to connect to, and create=true instructs the DBMS to create the database.*/
+   Java DB: jdbc:derby:testdb;create=true, where testdb is the name of the database to connect to, and create=true instructs the DBMS to create the database.
+   
+   Any JDBC 4.0 drivers that are found in your class path are automatically loaded. (However, you must manually load any drivers prior to JDBC 4.0 with the method Class.forName.)*/
