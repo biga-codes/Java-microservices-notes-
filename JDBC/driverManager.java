@@ -1,7 +1,7 @@
 public Connection getConnection() throws SQLException {
 
     Connection conn = null;
-    Properties connectionProps = new Properties();
+    Properties connectionProps = new Properties(); //properties interface
     connectionProps.put("user", this.userName);
     connectionProps.put("password", this.password);
 
