@@ -21,3 +21,5 @@ public Connection getConnection() throws SQLException {
     System.out.println("Connected to database");
     return conn;//returns the connection status
 }
+/* MySQL: jdbc:mysql://localhost:3306/, where localhost is the name of the server hosting your database, and 3306 is the port number.
+   Java DB: jdbc:derby:testdb;create=true, where testdb is the name of the database to connect to, and create=true instructs the DBMS to create the database.*/
