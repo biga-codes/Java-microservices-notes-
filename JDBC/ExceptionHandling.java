@@ -2,9 +2,8 @@ BatchUpdateException is thrown when an error occurs during a batch update operat
 SQLClientInfoException is thrown when one or more client information properties could not be set on a Connection
 The most common warning is a DataTruncation warning, a subclass of SQLWarning. All DataTruncation objects have a SQLState of 01004, 
 indicating that there was a problem with reading or writing data. 
-DataTruncation methods let you find out in which column or parameter data was truncated, 
-whether the truncation was on a read or write operation, how many bytes should have been transferred,
-and how many bytes were actually transferred.
+DataTruncation -- thrown to indicate that data may have been truncated
+BatchUpdateException -- thrown to indicate that not all commands in a batch update executed successfully
 
 public static void getWarningsFromResultSet(ResultSet rs)
     throws SQLException {
